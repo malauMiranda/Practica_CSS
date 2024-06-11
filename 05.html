@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+
+		<!--CSS-->
+		<style>
+
+
+			/*Main afecta todo el document*/
+			.main{
+				display: flex;
+				flex-wrap: wrap;
+           	 
+			}
+
+
+			/*Cualidades de boxes*/
+			.box {
+				height: 5rem;
+				width: 5rem;
+				border: 1px solid;
+				margin: .5rem;
+			}
+
+			/*Hijos de box*/
+			.box-1 {
+				background: #db5a3a;
+			}
+			.box-2 {
+				background: #8bd48b;
+			}
+			.box-3 {
+				background: #9e63e2;
+			}
+
+
+			@media (max-width: 600px){
+
+				.main{
+					flex:auto;
+				}
+
+				
+			}
+
+		</style>
+		<!-- FIN CSS-->
+
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="box box-1"></div>
+			<div class="box box-2"></div>
+			<div class="box box-3"></div>
+		</div>
+	</body>
+</html>

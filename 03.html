@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+
+		<!--CSS-->
+		<style>
+
+			/*Cualidades de boxes*/
+			.box {
+				height: 5rem;
+				width: 5rem;
+				border: 1px solid;
+				margin: .5rem;
+			}
+
+			/*Hijos de box*/
+			.box-1 {
+				background: #db5a3a;
+				transition: width 0.5s ease-in-out;
+			}
+
+			.box-1:hover {
+				width:25rem
+			}
+
+			.box-2 {
+				background: #8bd48b;
+				transition: transform 0.5s ease-in-out;
+			}
+
+			.box-2:hover {
+				transform:translateX(20rem);
+			}
+
+
+			.box-3 {
+				background: #9e63e2;
+				transition: background-color 0.5s ease-in-out;
+			}
+
+			.box-3:hover {
+				background-color: #ff8ec3;
+			}
+
+		</style>
+		<!-- FIN CSS-->
+
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="box box-1"></div>
+			<div class="box box-2"></div>
+			<div class="box box-3"></div>
+		</div>
+	</body>
+</html>
